@@ -6,7 +6,7 @@ from transformers import BertTokenizer
 from torch.utils.data import TensorDataset
 #%%
 data_df = get_input_df()
-data_df = data_df.sample(frac=0.001, random_state=5)
+data_df = data_df.sample(frac=0.0001, random_state=5)
 #%%
 data_df.head()
 #%%
