@@ -1,0 +1,6 @@
+/var/folders/r6/sx7lg3wj1lj0bd7v7gjjl7rm0000gn/T/ipykernel_52050/1770634209.py:33: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  torch.nn.utils.clip_grad_norm(model.parameters(),1.0)
+<xml><var name="AdamW" type="type" qualifier="builtins" value="%3Cclass %27transformers.optimization.AdamW%27&gt;" isContainer="True" />
+<var name="BertForSequenceClassification" type="type" qualifier="builtins" value="%3Cclass %27transformers.models.bert.modeling_bert.BertForSequenceClassification%27&gt;" isContainer="True" />
+<var name="BertTokenizer" type="type" qualifier="builtins" value="%3Cclass %27transformers.models.bert.tokenization_bert.BertTokenizer%27&gt;" isContainer="True" />
+<var name="DataLoader" type="type" qualifier="builtins" value="%3Cclass %27torch.utils.data.dataloader.DataLoader%27&gt;" isContainer="True" />
