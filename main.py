@@ -91,7 +91,7 @@ dataloader_test = DataLoader(
 from transformers import AdamW,get_linear_schedule_with_warmup
 optimizer = AdamW(model.parameters(),lr = 1e-5,eps = 1e-8)
 
-epochs  = 10
+epochs  = 1000
 scheduler = get_linear_schedule_with_warmup(
             optimizer,
     num_warmup_steps = 0,
