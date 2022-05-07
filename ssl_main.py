@@ -11,7 +11,7 @@ data_df = data_df.sample(frac=0.001)
 data_df.head()
 #%%
 data_df = data_df.iloc[:len(data_df)//10,:]
-unsup_df = pd.read_csv("augmented_data.csv")
+unsup_df = pd.read_csv("/content/drive/MyDrive/GitHub/uda-social-media/augmented_data.csv")
 #%%
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test = train_test_split(data_df.index.values,
@@ -225,7 +225,7 @@ for epoch in tqdm(range(1,epochs+1)):
         model.zero_grad()
 
         batch = tuple(b.to(device) for b in batch)
-        aug_batch = next(augment_iter)
+        aug_batch = tuple(ab.to(device) for ab in next(augment_iter))
 
         orig_inp, orig_mask, aug_inp, aug_mask = aug_batch
 
